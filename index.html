@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <!--  
+[if lt IE 9]> 
+<script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.min.js"></script>
+ <![endif]-->
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./carousel.css">
+    <link rel="stylesheet" href="./carousel.rtl.css">
+    <link rel="icon" type="image/png" href="./images/icon.png">
+    <script src="https://kit.fontawesome.com/790e150ce5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bildad Owuor</title>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="bootstrap" viewBox="0 0 118 94">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+      </symbol>
+      <symbol id="facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+      </symbol>
+      <symbol id="instagram" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+      </symbol>
+      <symbol id="twitter" viewBox="0 0 16 16">
+        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+      </symbol>
+    </svg>
+</head>
+
+<body class="container-fluid">
+
+  <!-- Nav bar -->
+  <div class="container-fluid fixed-top bg-white nav">
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="./index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <span class="fs-4"> Bildad</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#About" class="nav-link">About Me</a></li>
+        <li class="nav-item"><a href="#Projects" class="nav-link">My Skills</a></li>
+        <li class="nav-item"><a href="#Contacts" class="nav-link">Contacts</a></li>
+      </ul>
+    </header>
+  </div>
+</div>
+<!-- Landing page / home page -->
+<div class="container col-xxl-8 px-4 py-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img src="https://lh3.googleusercontent.com/nEjW_X0xU7tO2Ac5PoDyiWwp9V_iTbHjlpira-XcxUyTmZeEU2EiQTTGu7AMW22MH44r-E1Pr3WwuTw7Inhtq66MafKs0R9dTx12lX4JaR3Z4VtJW9x_-jnAyzKZ_3KkfsB1fSwjrz4R-LSSvci_Rbk62aA1m6XwyDsZXCe5VNt1p21jhorG8pFodrt8xRTY6GAS0PHYlK7UGnW5snSpcDNd9lHkKSytle9lOgh9wm1VtsTPfptXb33timspz-46DazTzgrRCOYRyUZwKfzqkP8gqEiPkQbwdwiS33r-zAAYx6HHjNDigkRHYYqcBOsp0nsy80nrfzHmRKY11E5bw81HeDxSdbyfqod_gkWJmBeIu3lrjM4rvMBdC8A8gXzXEO3CfGrwk41DY5D7JP2iPrBv8iXNjFZCQu7PMUCNhuEDgLka3Y5FJ0tw1T7RcApJ_1XNvLA7oTT__gWkI3ZAOfHmrfyk2HNSLsxnKCgPIJvtl48tXOA5S9jRB_Q-UHEAf2iMj1-zeLTyoK2AHLnsOgfO8Gt-f-kKypsO_ERNDjTW_pam6tCPTuRInvmPxPQ8AhJynbD6zUYy1uZiYakZtVxJz7j6L7jHIKJRkHPP0ooBtHNkX2SkIyZYlPfNBohOblkwody5rDA2DcUhHi-6r03ArFwGLGD-9iKr7mfI3eUT3rOXcuGB8OtSUjTa9B1TxstFHWqEMbEHagx7sYVOnXxbDi73s0qsQ6imvjt-1c_xiFPAjiv7zizQe-Y=w289-h306-no?authuser=0" class="d-block mx-lg-auto img-fluid round" alt="Image" width="700px" height="500px">
+    </div>
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold lh-1 mb-3">Hello</h1>
+      <p class="lead"></p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a href="https://www.linkedin.com/in/bildad-owuor" target="_blank"><button type="button" class="btn btn-outline-dark">Profile</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- About me -->
+<div id="About">
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="transbox background round"></div>
+      <div class="container">
+        <div class="carousel-caption text-start">
+          <h1 class="display-5 fw-bolder text-black">About Me</h1>
+          <p class="lead mb-4 text-black fw-bold fst-italic">I believe software can change people's lives... <span>is that crazy?</span>
+          </p>
+          <p><a class="btn btn-lg btn-primary" href="./404.html">Get My CV</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="transbox round graduation"></div>
+      <div class="container">
+        <div class="carousel-caption">
+          <h1 class="text-black fw-bolder">Education Background</h1>
+          <p class="text-black fw-bold fst-italic">I studied Bachelors of Science in Information Technology at <a href="https://www.tum.ac.ke/" class="tum text-black">Technical University of Mombasa</a></p>
+          <p><a class="btn btn-lg btn-primary" href="https://www.linkedin.com/in/bildad-owuor/details/education" target="_blank">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+    <div class="funfact transbox round"></div>
+      <div class="container">
+        <div class="carousel-caption text-end text-black">
+          <h1 class="fw-bolder">One more thing...</h1>
+          <p class="fw-bold fst-italic">I am a goal oriented, multitasker, flexible, honest and a good team player who can work under low supervision.</p>
+          <p><a class="btn btn-lg btn-primary" href="https://www.linkedin.com/in/bildad-owuor/details/experience" target="_blank">Experiences</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+<!-- my skills -->
+<div id="Projects">
+<h1 class="center">My Skills</h1>
+<div class="space"></div>
+<div class="container marketing">
+<div class="row">
+  <div class="col-lg-4">
+  <img src="./images/JavaScript-logo.png" alt="" srcset="" height="70px" width="60px">
+    <h2 class="fw-normal">JavaScript</h2>
+    <p>I am familiar with jquery library, Node.js a cross-platfom, back-end JavaScript runtime environment. </p>
+    <p><a class="btn btn-secondary" href="https://github.com/BildadOwuor/MyCalculator" target="_blank">Projects &raquo;</a></p>
+  </div>
+  <div class="col-lg-4">
+<img src="./images/html-logo.png" alt="" srcset="" height="70px" width="60px">
+    <h2 class="fw-normal">HTML</h2>
+    <p>A markup language I use to build the structure of my web pages. Am familiar with HTML 5.</p>
+    <p><a class="btn btn-secondary" href="https://github.com/BildadOwuor/rebounce" target="_blank">Projects &raquo;</a></p>
+  </div>
+  <div class="col-lg-4">
+    <img src="./images/css-logo.png" alt="" srcset="" width="60px" height="70px">
+    <h2 class="fw-normal">CSS</h2>
+    <p>To help me style my web pages, I use Bootstrap the most popular CSS framework directed at responsive, mobile-first front-end development. </p>
+    <p><a class="btn btn-secondary" href="https://github.com/BildadOwuor/BildadOwuor.github.io" target="_blank">Projects &raquo;</a></p>
+  </div>
+  <div class="col-lg-4">
+    <img src="./images/flutterlogo.jpg" alt="" srcset="" width="70px" height="80px">
+    <h2 class="fw-normal">Flutter Framework</h2>
+    <p>For mobile development, I use flutter , an open-source UI software development kit created by Google for cross platform applications from a single codebase.</p>
+    <p><a class="btn btn-secondary" href="https://github.com/BildadOwuor/UniApp" target="_blank">Projects &raquo;</a></p>
+  </div>
+  <div class="col-lg-4">
+    <img src="./images/sql-logo.png" alt="" srcset="" width="60px" height="70px">
+    <h2 class="fw-normal">SQL</h2>
+    <p>I use SQl to manage relational databases. </p>
+    <p><a class="btn btn-secondary" href="#" target="_blank">Projects &raquo;</a></p>
+  </div>
+</div>
+</div>
+</div>
+<!-- Contact Me -->
+<div id="Contacts">
+<div class="background-grey container-fluid round">
+<section class="mb-4 container text-white">
+
+  <!--Section heading-->
+  <h2 class="h1-responsive fw-bold text-center my-4">Contacts</h2>
+  <!--Section description-->
+  <p class="text-center w-responsive mx-auto mb-5">Do you have any question? Please do not hesitate to contact me directly. 
+    I will come back to you within a matter of hours to help.</p>
+
+  <div class="row">
+
+      <!--Grid column-->
+      <div class="col-md-9 mb-md-0 mb-5 ">
+          <form id="contact-form" name="contact-form" action="./mail.php" method="POST">
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="name" name="name" class="form-control">
+                          <label for="name" class="">Your name</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="email" name="email" class="form-control">
+                          <label for="email" class="">Your email</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form mb-0">
+                          <input type="text" id="subject" name="subject" class="form-control">
+                          <label for="subject" class="">Subject</label>
+                      </div>
+                  </div>
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-12">
+
+                      <div class="md-form">
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                          <label for="message">Your message</label>
+                      </div>
+
+                  </div>
+              </div>
+              <!--Grid row-->
+
+          </form>
+
+          <div class="text-center text-md-left">
+            <a class="btn btn-primary" onclick="validateForm()">Send</a>
+          </div>
+          <div class="status text-danger"></div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-md-3 text-center">
+          <ul class="list-unstyled mb-0">
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg>
+                  <p>Nairobi, Kenya</p>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+              </svg>
+                  <p>+2547 0052 4820</p>
+              </li>
+
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+              </svg>
+                  <p>Bildadowuor@outlook.com <br> Bildadowuor@yahoo.com</p>
+              </li>
+          </ul>
+      </div>
+      <!--Grid column-->
+
+  </div>
+
+</section>
+</div>
+</div>
+<!-- Footer -->
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+     <img src="./images/mylogo.png" alt="logo" srcset="" height="60px" width="70px">
+      <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Bildad O.</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="https://twitter.com/Bildad0" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/iambildad" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="http://www.facebook.com/IamBildad" target="_blank"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+    </ul>
+  </footer>
+</div>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

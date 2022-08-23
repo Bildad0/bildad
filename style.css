@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+body{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    padding: 0;
+}
+.lin{
+    size: 50%;
+}
+.round{
+    border-radius: 25px;
+    border: 10px solid white;
+}
+
+.background{
+    background-image: url(./images/courasel4.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    height: 100%;
+    width: 100%;
+    }
+
+    .tum{
+        text-decoration-line: none;
+    }
+    .center{
+        margin-left: auto;
+        text-align: center;
+    }
+    .space{
+        height: 30px;
+    }
+    .background-grey{
+        background-color: grey;
+        opacity: 10;
+    }
+    .transbox{
+        opacity: 0.5;
+    }
+    .graduation{
+        background-image: url(./images/graduation.jpeg);
+        -webkit-background-size: cover;
+        background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
+    .funfact{
+        background-image: url(./images/funfact.jpeg);
+        -webkit-background-size: cover;
+        background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        height: 100%;
+        width: 100%; 
+    }
