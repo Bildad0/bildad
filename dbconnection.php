@@ -1,5 +1,5 @@
 <?php
-$servername="localhost";
+$servername="https://databases-auth.000webhost.com";
 $username ="id18669442_feeds";
 $password ="BilAchieng'9&";
 $database ="id18669442_feedbacks";
