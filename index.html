@@ -36,6 +36,11 @@
 </head>
 
 <body class="container-fluid">
+  <!-- progress bar -->
+<div class="progress-container">
+  <div class="progress-bar"></div>
+</div>
+
 
   <!-- Nav bar -->
   <div class="container-fluid fixed-top bg-white nav">
@@ -156,83 +161,32 @@
 <!-- Contact Me -->
 <div id="Contacts">
 <div class="background-grey container-fluid round">
-<section class="mb-4 container text-white">
-
-  <!--Section heading-->
-  <h2 class="h1-responsive fw-bold text-center my-4">Leave a message</h2>
-  <!--Section description-->
-  <p class="text-center w-responsive mx-auto mb-5"></p>
-
-  <div class="row">
-
+<section class="mb-4 row text-white">
+<div class="skills-container col-lg-6">
+  <div class="aria-label"> Front End:</div>
+  <div class="progress">
+    <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+  </div>
+  <div class="aria-label"> Back-End:</div>
+  <div class="progress">
+    <div class="progress-bar bg-info progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+  </div>
+  <div class="aria-label">Github:</div>
+  <div class="progress">
+    <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+  </div>
+  <div class="aria-label">Linux:</div>
+  <div class="progress">
+    <div class="progress-bar bg-danger progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+  </div>
+  <div class="aria-label">UI/UX:</div>
+  <div class="progress">
+    <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+  </div>
+</div>
       <!--Grid column-->
-      
-      <div class="col-md-9 mb-md-0 mb-5 ">
-          <form id="contact-form" action="db/mail.php" method="POST">
-
-              <!--Grid row-->
-              <div class="row">
-
-                  <!--Grid column-->
-                  <div class="col-md-6">
-                      <div class="md-form mb-0">
-                        <label for="name" class="">Your name:</label>
-                          <input type="text" id="name" name="name" class="form-control" required>
-                      </div>
-                  </div>
-                  <!--Grid column-->
-
-                  <!--Grid column-->
-                  <div class="col-md-6">
-                      <div class="md-form mb-0">
-                        <label for="email" class="">Your email:</label>
-                          <input type="text" id="email" name="email" class="form-control" required>
-                      </div>
-                  </div>
-                  <!--Grid column-->
-
-              </div>
-              <!--Grid row-->
-
-              <!--Grid row-->
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="md-form mb-0">
-                        <label for="subject" class="">Subject:</label>
-                          <input type="text" id="subject" name="subject" class="form-control" required>
-                      </div>
-                  </div>
-              </div>
-              <!--Grid row-->
-
-              <!--Grid row-->
-              <div class="row">
-
-                  <!--Grid column-->
-                  <div class="col-md-12">
-                      <div class="md-form">
-                        <label for="message">Your message:</label>
-                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                      </div>
-                  </div>
-              </div>
-              <div class="space"></div>
-              <div class="text-center text-md-left">
-                <button  type="Submit" name="Submit" class="btn btn-outline-dark" onclick="validateForm()" disabled>Send</button>
-              </div>
-              <div class="status text-danger"></div>
-
-            </form>
-
-          </div>
-
-      
-
-       
-      <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-md-3 text-center">
+      <div class="col-md-6 text-center">
+        <div class="giving-a-padding"></div>
           <ul class="list-unstyled mb-0">
               <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
                 <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
