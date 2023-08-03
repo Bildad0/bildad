@@ -1,0 +1,22 @@
+body{scroll-behavior: smooth;}
+
+
+.t-hover:hover{
+    text-decoration: underline;
+
+}
+
+.button-border{
+    border-style: solid;
+}
+
+.About-section{
+    background-image: url("https://scitechdaily.com/images/First-Quantum-Programming-Language.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+section img{
+   
+}

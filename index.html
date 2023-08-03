@@ -5,9 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="jquery.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Bildad Owuor</title>
 </head>
-<body>
+<body class="">
+    <header class="bg-gradient-to-t from-gray-900 to-black">
+        <nav class="flex flex-row justify-between p-4 text-bold text-xl font-mono text-amber-600">
+            <h1>Bildad</h1>
+<ul class="flex flex-row gap-3">
     
+    <li class="t-hover">About</li>
+    <li class="t-hover">Projects</li>
+    <li class="t-hover">Contact</li>
+</ul>
+        </nav>
+    </header>
+    <main class="">
+        <div class="flex flex-col h-screen font-bold tracking-wide justify-center items-center About-section pb-6 text-white pt-1 sm:pt-1 md:pt-8 lg:pt-15 xl:pt-16 ">
+            <h1 class="text-4xl font-bold p-6 font-sans">Welcome !</h1>
+          
+                <div class="w-1/2">I am <i>Bildad Owuor</i> </div>
+        
+         <div class="flex flex-row gap-3 button-border mt-4">
+            <button  class="rounded-full bg-blue-200 p-2 text-black ">View Work</button>
+            <button  class="rounded-full bg-slate-200 p-2 text-black">Hire Me!</button>
+        </div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4 bg-black gap-3 justify-between p-4 place-content-center">
+            <div class="text-white gap-3">
+                <h1>About me</h1>
+                <section>
+                   <h4>Software Development and Design</h4> 
+                   <div class="bg-gray-300 rounded-full">
+                    <div class="bg-green-500 justify-center" style="width:70%">70%</div>
+                  </div>
+                </section>
+                <section>
+                    <h4>IT technical support</h4> 
+                    <div class="bg-gray-300 rounded-full">
+                     <div class="bg-amber-500 justify-center" style="width:80%">80%</div>
+                   </div>
+                 </section>
+                 <section>
+                    <h4>Database Administration</h4> 
+                    <div class="bg-gray-300 rounded-full">
+                     <div class="bg-red-500 justify-center" style="width:85%">85%</div>
+                   </div>
+                 </section>
+            </div>
+            <div class="justify-center">
+                <img src="https://th.bing.com/th/id/OIP.zgVd2ZVyomyFW6l3NrP9VwHaE0?pid=ImgDet&rs=1" loading="lazy"/>
+            </div>
+            <div class="text-white"> 
+                <h1>Who Am I</h1>
+                <p>An IT graduate with interest in Information Systems and 
+                    <a target="_blank" href="https://en.wikipedia.org/wiki/Quantum_computing">
+                        Quantum computing
+                    </a>.
+
+                    
+                    </p>
+
+                    <section class="text-amber-600 flex flex-row text-center gap-3">
+                        Follow me: <hr class="w-20 mt-4 p-3"/> <img src="./images/Icons/facebook.png"/><img src="./images/Icons/instagram.png"/> <img src="./images/Icons/twitter.png"/> <img src="./images/Icons/linkedin-logo.png"/> <img src="./images/Icons/github.png"/>  </section>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
 </body>
 </html>
