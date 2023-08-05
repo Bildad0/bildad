@@ -11,10 +11,19 @@ body {
 }
 
 .About-section {
+    opacity: 2;
     background-image: url("https://scitechdaily.com/images/First-Quantum-Programming-Language.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.contact-background {
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/backgroundEarth.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section img {
@@ -65,4 +74,8 @@ section img {
 
 #all {
     background-color: black;
+}
+
+form {
+    opacity: 0.5;
 }

@@ -14,9 +14,9 @@
 
 <body class="">
     <header class="bg-gradient-to-t from-gray-900 to-black">
-        <nav class="flex flex-row justify-between p-4 text-bold text-xl font-mono text-amber-600">
+        <nav class="flex flex-row justify-between p-1 sm:p-1 md:p-4 lg:p-4  xl:p-4 text-bold text-xl font-mono text-amber-600">
             <h1>Bildad</h1>
-            <ul class="flex flex-row gap-3">
+            <ul class="invisible sm:invisible md:flex lg:flex xl:flex flex-row gap-3">
                 <li class="t-hover"><a href="#about">About</a></li>
                 <li class="t-hover"><a href="#projects-section">Projects</a></li>
                 <li class="t-hover"><a href="#contact-me">Contact</a></li>
@@ -24,25 +24,25 @@
         </nav>
     </header>
     <main class="">
-        <div class="flex flex-col h-screen font-bold tracking-wide justify-center items-center About-section pb-6 text-white pt-1 sm:pt-1 md:pt-8 lg:pt-15 xl:pt-16 ">
+        <div class="flex flex-col h-100vh font-bold tracking-wide justify-center items-center About-section pb-6 text-white pt-1 sm:pt-1 md:pt-8 lg:pt-15 xl:pt-16 ">
             <h1 class="text-4xl font-bold p-6 font-sans">Welcome !</h1>
 
             <div class="w-1/2">I am <i>Bildad Owuor</i> </div>
 
-            <div class="flex flex-row gap-3 mt-4">
+            <div class="flex flex-row gap-3 m-10">
                 <button class="rounded-full button-border bg-blue-200 p-2 text-black ">View Work</button>
                 <button class="rounded-full button-border bg-slate-200 p-2 text-black">Hire Me!</button>
             </div>
         </div>
 
-        <div class="grid grid-cols-3 gap-4 bg-black gap-3 justify-between p-4 place-content-center" id="about">
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 bg-black gap-3 justify-between p-4 place-content-center" id="about">
             <div class="text-white gap-3">
                 <h1 class="p-3 text-center text-3xl font-bolder">About me</h1>
                 <section class="">
                     <h4>Software Development and Design</h4>
                     <div class="bg-gray-300 rounded-full h-3 m-3">
                         <div class="bg-amber-500 justify-center h-3 text-sm" style="width:70%">
-                            <p>70%</p>
+
                         </div>
                     </div>
                 </section>
@@ -50,14 +50,16 @@
                     <h4>IT technical support</h4>
                     <div class="bg-gray-300 rounded-full h-3 m-3">
                         <div class="bg-amber-500 justify-center h-3 text-sm" style="width:80%">
-                            <p class="text-sm">80%</p>
+
                         </div>
                     </div>
                 </section>
                 <section>
                     <h4>Database Administration</h4>
                     <div class="bg-gray-300 rounded-full h-3 m-3">
-                        <div class="bg-amber-500 justify-center h-3" style="width:85%">85%</div>
+                        <div class="bg-amber-500 justify-center h-3 text-sm" style="width:80%">
+
+                        </div>
                     </div>
                 </section>
             </div>
@@ -91,7 +93,7 @@
         <div class="bg-slate-950  text-center p-6">
             <h1 class="text-slate-300 p-4 text-5xl antialiased font-bold tracking-wide thick-text">Services</h1>
 
-            <div class="grid grid-cols-4 gap-3 justify-around">
+            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-3 justify-around">
                 <div class="bg-black text-white p-4">
                     <div></div>
                     <div>
@@ -170,16 +172,25 @@
         </div>
 
         <!-- Contact me -->
-        <div class="flex flex-row" id="contact-me">
-            <div>
+        <div class="grid grid-flow-row-dense grid-cols-1 sm:grid-cols-1 md:grid-cols-3  lg:grid-cols-3 justify-around bg-black text-center  gap-3" id="contact-me">
+            <div class="contact-background p-6 text-white">
                 <ul>
                     <li> PHONE : <br/> +2547 0052 4820</li>
                     <li>ADDRESS : <br/> Nairobi,Kenya</li>
                     <li>EMAIL : <br/> bildadowuor@gmail.com</li>
                 </ul>
             </div>
-            <div>
-                <form></form>
+            <div class="col-span-2">
+                <div class="flex flex-col">
+                    <form class="p-7 m-4 gap-3 ">
+                        <input type="email" name="email" id="email" class="p-1">
+                        <input type="text" name="fname" id="fname" class="p-1">
+                        <input type="text" name="lname" id="lname" class="p-1">
+                        <input type="text" name="message" id="" class="p-1">
+                        <input type="button" name="submit" id="submit" value="Send Message" class="p-1 text-white">
+                    </form>
+                </div>
+
             </div>
 
         </div>
