@@ -1,88 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="jquery.js"></script>
+    <script src="./jquery.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/4d0eb95ce6.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Bildad Owuor</title>
 </head>
+
 <body class="">
     <header class="bg-gradient-to-t from-gray-900 to-black">
         <nav class="flex flex-row justify-between p-4 text-bold text-xl font-mono text-amber-600">
             <h1>Bildad</h1>
-<ul class="flex flex-row gap-3">
-    
-    <li class="t-hover">About</li>
-    <li class="t-hover">Projects</li>
-    <li class="t-hover">Contact</li>
-</ul>
+            <ul class="flex flex-row gap-3">
+                <li class="t-hover">About</li>
+                <li class="t-hover">Projects</li>
+                <li class="t-hover">Contact</li>
+            </ul>
         </nav>
     </header>
     <main class="">
         <div class="flex flex-col h-screen font-bold tracking-wide justify-center items-center About-section pb-6 text-white pt-1 sm:pt-1 md:pt-8 lg:pt-15 xl:pt-16 ">
             <h1 class="text-4xl font-bold p-6 font-sans">Welcome !</h1>
-          
-                <div class="w-1/2">I am <i>Bildad Owuor</i> </div>
-        
-         <div class="flex flex-row gap-3 button-border mt-4">
-            <button  class="rounded-full bg-blue-200 p-2 text-black ">View Work</button>
-            <button  class="rounded-full bg-slate-200 p-2 text-black">Hire Me!</button>
-        </div>
+
+            <div class="w-1/2">I am <i>Bildad Owuor</i> </div>
+
+            <div class="flex flex-row gap-3 mt-4">
+                <button class="rounded-full button-border bg-blue-200 p-2 text-black ">View Work</button>
+                <button class="rounded-full button-border bg-slate-200 p-2 text-black">Hire Me!</button>
+            </div>
         </div>
 
         <div class="grid grid-cols-3 gap-4 bg-black gap-3 justify-between p-4 place-content-center">
             <div class="text-white gap-3">
                 <h1>About me</h1>
                 <section>
-                   <h4>Software Development and Design</h4> 
-                   <div class="bg-gray-300 rounded-full h-3">
-                    <div class="bg-amber-500 justify-center h-3" style="width:70%">70%</div>
-                  </div>
+                    <h4>Software Development and Design</h4>
+                    <div class="bg-gray-300 rounded-full h-3">
+                        <div class="bg-amber-500 justify-center h-3" style="width:70%">70%</div>
+                    </div>
                 </section>
                 <section>
-                    <h4>IT technical support</h4> 
+                    <h4>IT technical support</h4>
                     <div class="bg-gray-300 rounded-full h-3">
-                     <div class="bg-amber-500 justify-center h-3 text-sm" style="width:80%"> <p class="text-sm">80%</p></div>
-                   </div>
-                 </section>
-                 <section>
-                    <h4>Database Administration</h4> 
+                        <div class="bg-amber-500 justify-center h-3 text-sm" style="width:80%">
+                            <p class="text-sm">80%</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h4>Database Administration</h4>
                     <div class="bg-gray-300 rounded-full h-3">
-                     <div class="bg-amber-500 justify-center h-3" style="width:85%">85%</div>
-                   </div>
-                 </section>
+                        <div class="bg-amber-500 justify-center h-3" style="width:85%">85%</div>
+                    </div>
+                </section>
             </div>
             <div class="justify-center">
-                <img src="https://th.bing.com/th/id/OIP.zgVd2ZVyomyFW6l3NrP9VwHaE0?pid=ImgDet&rs=1" loading="lazy"/>
+                <img src="https://th.bing.com/th/id/OIP.zgVd2ZVyomyFW6l3NrP9VwHaE0?pid=ImgDet&rs=1" loading="lazy" />
             </div>
-            <div class="text-white"> 
+            <div class="text-white">
                 <h1>Who Am I</h1>
-                <p>An IT graduate with interest in Information Systems and 
+                <p>An IT graduate with interest in Information Systems and
                     <a target="_blank" href="https://en.wikipedia.org/wiki/Quantum_computing">
                         Quantum computing
                     </a>.
 
-                    
-                    </p>
 
-                    <section class="text-amber-600 flex flex-row text-center gap-3">
-                        Follow me: <hr class="w-20 mt-4 p-3"/> <img src="./images/Icons/facebook.png"/><img src="./images/Icons/instagram.png"/> <img src="./images/Icons/twitter.png"/> <img src="./images/Icons/linkedin-logo.png"/> <img src="./images/Icons/github.png"/>  </section>
+                </p>
+
+                <section class="text-amber-600 flex flex-row text-center gap-3">
+                    Follow me:
+                    <hr class="w-20 mt-4 p-3" />
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-github"></i>
+                </section>
             </div>
         </div>
 
+        <!-- Services section -->
         <div class="bg-slate-950  text-center p-6">
-             <h1 class="text-slate-300">Services</h1>
+            <h1 class="text-slate-300 p-4 text-5xl antialiased font-bold tracking-wide thick-text">Services</h1>
 
-             <div class="flex flex-row gap-3 justify-around">
-<div class="bg-black text-white p-4">card 1</div>
-<div class="bg-black text-white p-4">card 2</div>
-<div class="bg-black text-white p-4">card 3</div>
-             </div>
+            <div class="grid grid-cols-4 gap-3 justify-around">
+                <div class="bg-black text-white p-4">
+                    <div></div>
+                    <div>
+                        <h3>Database Administration</h3>
+                        <p> Responsible for maintaining, securing, and operating databases and also ensures that data is correctly stored and retrieved.</p>
+                    </div>
+                </div>
+                <div class="bg-black text-white p-4">
+                    <div></div>
+                    <div>
+                        <h3>IT technical support</h3>
+                        <p>Help maintain, manage and repair IT systems. Also perform fault diagnosis and repair, hardware and software installation, network troubleshooting and software configuration.</p>
+                    </div>
+                </div>
+                <div class="bg-black text-white p-4">
+                    <div></div>
+                    <div>
+                        <h3>Software Development and Design</h3>
+                        <p>I can design develope and implement secure software systems.</p>
+                    </div>
+                </div>
+                <div class="bg-black text-white p-4">
+                    <div></div>
+                    <div>
+                        <h3>Photography and photo editing</h3>
+                        <p>I have photography skills with a work experience with pixeto media photographers. </p>
+                    </div>
+                </div>
             </div>
+        </div>
 
+        <!-- portfolio section -->
+        <div class="bg-slate-700 text-white">
+            <h1 class="text-center">Portfolio</h1>
+            <div class="justify-center">
+                <button class="tablink" onclick="openTab('all', this, 'black')" id="defaultOpen">All</button>
+                <button class="tablink" onclick="openTab('projects', this, 'black')">Projects</button>
+                <button class="tablink" onclick="openTab('album', this, 'black')">Album</button>
+                <button class="tablink" onclick="openTab('designs', this, 'black')">Designs</button>
+                <div id="all" class="tab-content text-center">
+                    <h1>All</h1>
+                    <div> hi all projects</div>
+                </div>
+                <div id="projects" class="tab-content text-center">
+                    <h1>Projects</h1>
+                    <div>Only projects</div>
+                </div>
+                <div class="tab-content text-center " id="album">
+                    <h1>Album</h1>
+                    <div>Photography album</div>
+                </div>
+                <div class="tab-content text-center" id="designs">
+                    <h1>Designs</h1>
+                    <div>Designs I made</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- My blogs -->
+        <div></div>
+
+        <!-- Contact me -->
+        <div></div>
     </main>
-    <footer></footer>
+    <footer class="bg-black text-white text-center justify-center p-4">
+        <h1>Bildad</h1>
+        <div class="flex flex-row gap-3">
+            <i class="fa-brands fa-facebook" style="color: #46474b;"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+        <div class="">
+            <p>&copy; 2023 BILDAD OWUOR. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+
 </body>
+
 </html>
