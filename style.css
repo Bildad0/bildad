@@ -72,10 +72,22 @@ section img {
     background-color: black;
 }
 
-#all {
+#all,
+form {
     background-color: black;
 }
 
-form {
-    opacity: 0.5;
+form input,
+form textarea {
+    border: solid 2px burlywood;
+    border-radius: 15px;
+}
+
+.message {
+    min-height: 20vh;
+    min-width: 100%;
+}
+
+.email {
+    min-width: 100%;
 }
