@@ -1,6 +1,6 @@
 body {
     scroll-behavior: smooth;
-    font-family: 'Edu SA Beginner', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 
 .t-hover:hover {
@@ -101,11 +101,13 @@ h3 {
     font-family: 'Anton', sans-serif;
 }
 
-.inactive {
-    opacity: 0.5;
-}
-
 
 /* font-family: 'Anton', sans-serif;
 font-family: 'Edu SA Beginner', cursive;
 font-family: 'Handjet', cursive; */
+
+
+/* font-family: 'Anton', sans-serif;
+font-family: 'Edu SA Beginner', cursive;
+font-family: 'Handjet', cursive;
+font-family: 'Roboto', sans-serif; */

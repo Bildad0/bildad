@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Edu+SA+Beginner:wght@400;600&family=Handjet:wght@600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Edu+SA+Beginner:wght@400;600&family=Handjet:wght@600;800&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,300;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4d0eb95ce6.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
@@ -17,13 +17,15 @@
 
 <body class="dark:text-white">
     <header class="bg-gradient-to-t from-gray-900 to-black">
-        <nav class="flex flex-row justify-between p-1 sm:p-1 md:p-4 lg:p-4  xl:p-4 text-bold text-xl font-mono text-amber-600">
+        <nav class="grid grid-cols-2 justify-between p-1 sm:p-1 md:p-4 lg:p-4  xl:p-4 text-bold text-xl font-mono text-amber-600">
             <h1 class="">Bildad</h1>
+            <i class="fa-solid fa-bars md:invisible  lg:invisible xl:invisible mr-auto ml-50" id="menu"></i>
             <ul class="invisible sm:invisible md:visible  lg:visible  xl:visible flex flex-row gap-3">
                 <li class="t-hover"><a href="#about">About</a></li>
                 <li class="t-hover"><a href="#projects-section">Projects</a></li>
                 <li class="t-hover"><a href="#contact-me">Contact</a></li>
             </ul>
+
         </nav>
     </header>
     <main class="">
@@ -133,12 +135,12 @@
             <h1 class="text-center text-slate-300 p-4 text-5xl antialiased font-bold tracking-wide thick-text">Portfolio</h1>
             <div class="justify-center">
 
-                <ul id="tabs">
+                <ul id="tabs ">
 
-                    <li class="tablink"><a id="tab1">All</a></li>
-                    <li class="tablink"><a id="tab2">Projects</a></li>
-                    <li class="tablink"><a id="tab3">Album</a></li>
-                    <li class="tablink"><a id="tab4">Designs</a></li>
+                    <li class="tablink text-center"><a id="tab1">All</a></li>
+                    <li class="tablink text-center"><a id="tab2">Projects</a></li>
+                    <li class="tablink text-center"><a id="tab3">Album</a></li>
+                    <li class="tablink text-center"><a id="tab4">Designs</a></li>
                 </ul>
                 <div id="tab1c " class="tab-content text-center ">
                     <h1>All</h1>
@@ -183,7 +185,7 @@
             <div class="contact-background text-white col-span-1 text-start ">
                 <div class="justify-center text-start p-2 m-8 ">
                     <ul class="gap-4 leading-9 ">
-                        <li> PHONE : +2547 0052 4820</li>
+                        <li>PHONE : +2547 0052 4820</li>
                         <li>ADDRESS : Nairobi,Kenya</li>
                         <li>EMAIL : bildadowuor@gmail.com</li>
                     </ul>
@@ -199,7 +201,7 @@
                         </div>
                         <input type="email " name="email " id="email " class="p-1 w-1/2 email " placeholder="Email ">
                         <textarea type="text " name="message " id="message " class="p-1 w-1/2 message " placeholder="Message "></textarea>
-                        <input type="button " name="submit " id="submit " value="Send Message " class="p-1 text-white w-1/2 ">
+                        <input type="button " name="submit " id="submit " value="Send Message " class="p-1 text-white w-1/2 bg-slate-700 text-center">
                     </form>
                 </div>
 
