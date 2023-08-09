@@ -8,16 +8,16 @@ $(document).ready(function() {
 
     //all jquery here
 
-    $('#tabs li a').click(function() {
-        var t = $(this).attr('id');
+    jQuery('.tabs .tab-links a').on('click', function(e) {
+        var currentAttrValue = jQuery(this).attr('href');
 
-        if ($(this).hasClass('inactive')) {
-            $('#tabs li a').addClass('inactive');
-            $(this).removeClass('inactive');
+        // Show/Hide Tabs
+        jQuery('.tabs ' + currentAttrValue).fadeIn(400).siblings().hide();
 
-            $('.tab-content').hide();
-            $('#' + t + 'c').fadeIn('slow');
-        }
+        // Change/remove current tab to active
+        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+
+        e.preventDefault();
     });
 
 });
