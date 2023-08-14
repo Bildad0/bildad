@@ -38,30 +38,6 @@ section img {
     text-decoration-thickness: 20%;
 }
 
-
-/* .tablink {
-    background-color: gray;
-    color: burlywood;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 25%;
-}
-
-.tablink:hover {
-    background-color: aliceblue;
-}
-
-.tab-content {
-    color: white;
-    display: none;
-    padding: 50px;
-    text-align: center;
-} */
-
 #projects {
     background-color: black;
 }
@@ -125,9 +101,8 @@ h3 {
 }
 
 .tab-links li {
-    display: flex;
-    flex-direction: row;
     margin: 0px 0px;
+    float: left;
     list-style: none;
 }
 
@@ -181,3 +156,32 @@ font-family: 'Handjet', cursive; */
 font-family: 'Edu SA Beginner', cursive;
 font-family: 'Handjet', cursive;
 font-family: 'Roboto', sans-serif; */
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .tab-links li {
+        float: center;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {}

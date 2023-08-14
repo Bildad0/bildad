@@ -17,8 +17,8 @@
 
 <body class="dark:text-white">
     <header class="bg-gradient-to-t from-gray-900 to-black">
-        <nav class="grid grid-cols-2 justify-between p-1 sm:p-1 md:p-4 lg:p-4  xl:p-4 text-bold text-xl font-mono text-amber-600">
-            <h1 class="">Bildad</h1>
+        <nav class="grid grid-cols-3 justify-between p-1 sm:p-1 md:p-4 lg:p-4  xl:p-4 text-bold text-xl font-mono text-amber-600">
+            <h1 class="md:ml-2 lg:ml-3 xl:ml-3">Bildad</h1>
             <i class="fa-solid fa-bars md:invisible  lg:invisible xl:invisible mr-auto ml-50" id="menu"></i>
             <ul class="invisible sm:invisible md:visible  lg:visible  xl:visible flex flex-row gap-3">
                 <li class="t-hover"><a href="#about">About</a></li>
@@ -131,37 +131,42 @@
         </div>
 
         <!-- portfolio section -->
-        <div class="bg-slate-700 text-white" id="projects-section">
+        <div class="bg-black text-white" id="projects-section">
             <h1 class="text-center text-slate-300 p-4 text-5xl antialiased font-bold tracking-wide thick-text">Portfolio</h1>
             <div class="justify-center">
 
-                <ul id="tabs ">
+                <ul id="tabs bg-black">
                     <div class="tabs">
-                        <ul class="tab-links">
-                            <li class="active"><a href="#tab1">Tab #1</a></li>
-                            <li><a href="#tab2">Tab #2</a></li>
-                            <li><a href="#tab3">Tab #3</a></li>
-                            <li><a href="#tab4">Tab #4</a></li>
+                        <ul class="tab-links flex flex-row justify-center m-3">
+                            <li class="active"><a href="#tab1">All</a></li>
+                            <li><a href="#tab2">Brand</a></li>
+                            <li><a href="#tab3">Design</a></li>
+                            <li><a href="#tab4">Graphics</a></li>
                         </ul>
 
                         <div class="tab-content">
-                            <div id="tab1" class="tab active">
-                                <p>Tab #1 content goes here!</p>
-                                <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis.</p>
+                            <div id="tab1" class="tab active text-slate-600 flex flex-row">
+                                <div>
+                                    <img src="one" />
+                                    <p></p>
+                                </div>
+                                <div><img src="" alt="Image two" />
+                                    <p></p>
+                                </div>
                             </div>
 
-                            <div id="tab2" class="tab">
+                            <div id="tab2" class="tab text-slate-600">
                                 <p>Tab #2 content goes here!</p>
                                 <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis. In hac habitasse
                                     platea dictumst. Ut euismod tempus hendrerit. Morbi ut adipiscing nisi. Etiam rutrum sodales gravida! Aliquam tellus orci, iaculis vel.</p>
                             </div>
 
-                            <div id="tab3" class="tab">
+                            <div id="tab3" class="tab text-slate-600">
                                 <p>Tab #3 content goes here!</p>
                                 <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum ri.</p>
                             </div>
 
-                            <div id="tab4" class="tab">
+                            <div id="tab4" class="tab text-slate-600">
                                 <p>Tab #4 content goes here!</p>
                                 <p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum risus ornare mollis. In hac habitasse
                                     platea dictumst. Ut euismod tempus hendrerit. Morbi ut adipiscing nisi. Etiam rutrum sodales gravida! Aliquam tellus orci, iaculis vel.</p>
