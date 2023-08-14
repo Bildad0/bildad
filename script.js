@@ -8,4 +8,14 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+
+    $('#form').submit(function() {
+        var $inputs = $('#form:input');
+
+        var values = {};
+
+        $inputs.each(() => {
+            values[this.name] = $(this).val();
+        });
+    });
 });
