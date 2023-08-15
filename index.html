@@ -147,12 +147,13 @@
                         </ul>
 
                         <div class="tab-content">
-                            <div id="tab1" class="tab active text-slate-600 flex flex-row">
-                                <div>
-                                    <img src="" alt="image one" />
+                            <div id="tab1" class="tab active text-slate-600 grid grid-rows-2 grid-flow-col gap-4 ">
+                                <div class="card">
+                                    <img src="https://backiee.com/static/wpdb/wallpapers/portrait/1215x2160/187084.jpg" alt="image one" height="100" width="150" class="rounded-md" />
                                     <p></p>
                                 </div>
-                                <div><img src="" alt="Image two" />
+                                <div>
+                                    <img src="https://i.pinimg.com/474x/d5/da/22/d5da22785cf29442a9e38f2b431df4b2--nature-pictures-beautiful-pictures.jpg" alt="Image two" height="100" width="150" class="rounded-md" />
                                     <p></p>
                                 </div>
                             </div>
@@ -211,12 +212,14 @@
             </div>
             <div class="col-span-1 ">
                 <div class=" ">
-                    <form class="p-7 m-4 gap-3 grid grid-cols-1 p-6 text-black " id="form">
+                    <form class="p-7 m-4 gap-3 grid grid-cols-1 p-6 text-black " id="form" method="post">
                         <div class="flex fle-row gap-3 ">
                             <input type="text " name="fname " id="fname " class="p-1 w-1/2 " placeholder="First Name ">
+                            <div class="nameResponse text-red-600"></div>
                             <input type="text " name="lname " id="lname " class="p-1 w-1/2 " placeholder="Last Name ">
                         </div>
                         <input type="email " name="email " id="email " class="p-1 w-1/2 email " placeholder="Email ">
+                        <div class="response text-red-600"></div>
                         <textarea type="text " name="message " id="message " class="p-1 w-1/2 message " placeholder="Message "></textarea>
                         <button type="submit " name="submit " id="submit " class="p-1 text-white w-1/2 bg-slate-700 text-center">Send</button>
                     </form>

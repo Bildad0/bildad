@@ -11,12 +11,20 @@ $(document).ready(function() {
 
     $('#form').submit(function(e) {
         e.preventDefault();
-
-        var $inputs = $('#form:input');
         var values = {};
-        $inputs.each(() => {
-            values[this.name] = $(this).val();
+        $.each($('#form').serializeArray(), function(i, field) {
+            values[field.name] = field.value;
         });
-        console.log(...values); //log user input
+        console.log(values); //log user input
+
+        //varify email
+        if (values['email'] == '') {
+            $('.response').append("Email is required");
+
+            return false;
+        } else if (values['fname'] == '') {
+            $('.nameResponse').append("First Name is required");
+            return false;
+        }
     });
 });

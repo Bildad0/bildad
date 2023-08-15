@@ -124,7 +124,7 @@ h3 {
 
 li.active a,
 li.active a:hover {
-    background: #fff;
+    background: #ca8a04;
     color: #4c4c4c;
 }
 
@@ -135,7 +135,7 @@ li.active a:hover {
     padding: 15px;
     border-radius: 3px;
     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
-    background: #fff;
+    background: black;
 }
 
 .tab {
@@ -165,7 +165,7 @@ font-family: 'Roboto', sans-serif; */
         display: none;
     }
     nav {
-        display: flex;
+        align-items: stretch;
         justify-content: space-between;
     }
 }
