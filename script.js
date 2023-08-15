@@ -9,13 +9,14 @@ $(document).ready(function() {
     });
 
 
-    $('#form').submit(function() {
+    $('#form').submit(function(e) {
+        e.preventDefault();
+
         var $inputs = $('#form:input');
-
         var values = {};
-
         $inputs.each(() => {
             values[this.name] = $(this).val();
         });
+        console.log(...values); //log user input
     });
 });

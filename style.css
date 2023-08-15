@@ -109,8 +109,8 @@ h3 {
 .tab-links a {
     padding: 9px 15px;
     display: inline-block;
-    border-radius: 0px 0px 0px 0px;
-    background: #7FB5DA;
+    margin: 2px;
+    background: transparent;
     font-size: 16px;
     font-weight: 600;
     color: #4c4c4c;
@@ -118,7 +118,7 @@ h3 {
 }
 
 .tab-links a:hover {
-    background: #a7cce5;
+    background: transparent;
     text-decoration: none;
 }
 
@@ -160,7 +160,15 @@ font-family: 'Roboto', sans-serif; */
 
 /* Extra small devices (phones, 600px and down) */
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    nav ul {
+        display: none;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+}
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
