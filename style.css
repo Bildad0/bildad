@@ -168,6 +168,11 @@ font-family: 'Roboto', sans-serif; */
         align-items: stretch;
         justify-content: space-between;
     }
+    .blogs {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 
