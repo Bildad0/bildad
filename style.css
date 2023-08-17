@@ -143,7 +143,9 @@ li.active a:hover {
 }
 
 .tab.active {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    row-gap: 2rem;
 }
 
 
@@ -172,6 +174,15 @@ font-family: 'Roboto', sans-serif; */
         align-items: center;
         display: flex;
         flex-direction: row;
+    }
+    .tab.active {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    .tab .image1,
+    .tab .image3,
+    .tab .image6 {
+        grid-column-end: span 3;
     }
 }
 
