@@ -14,15 +14,18 @@ $(document).ready(function() {
         var values = {};
         $.each($('#form').serializeArray(), function(i, field) {
             values[field.name] = field.value;
+       
         });
-        console.log(values); //log user input
+      
+        console.log("User inputs: ", values); //log user input
 
         //varify email
-        if (values['email'] == '') {
+        if (values['email'] == null) {
+            console.log("Email is required");
             $('.response').append("Email is required");
-
             return false;
-        } else if (values['fname'] == '') {
+        } else if (values['fname'] == null) {
+            console.log("First name is required");
             $('.nameResponse').append("First Name is required");
             return false;
         }

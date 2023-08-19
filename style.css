@@ -1,3 +1,7 @@
+*{
+    overflow-x: hidden;
+}
+
 body {
     scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
@@ -88,10 +92,7 @@ h3 {
 }
 
 
-/*----- Tab Links -----*/
 
-
-/* Clearfix */
 
 .tab-links:after {
     display: flex;
@@ -128,9 +129,6 @@ li.active a:hover {
     color: #4c4c4c;
 }
 
-
-/*----- Content of Tabs -----*/
-
 .tab-content {
     padding: 15px;
     border-radius: 3px;
@@ -142,11 +140,15 @@ li.active a:hover {
     display: none;
 }
 
+.tab img:hover{
+    opacity: 0.3;
+}
 .tab.active {
     display: flex;
     flex-direction: row;
     row-gap: 2rem;
 }
+
 
 
 /* font-family: 'Anton', sans-serif;

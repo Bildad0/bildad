@@ -1,3 +1,9 @@
 
+# any file in... 
 **node_modules
+
+# ...folder
+
+
+# any file ending with
 *.json
