@@ -9,25 +9,55 @@ $(document).ready(function() {
     });
 
 
+
+// submiting form 
     $('#form').submit(function(e) {
         e.preventDefault();
-        var values = {};
+
+        const values = {};
         $.each($('#form').serializeArray(), function(i, field) {
             values[field.name] = field.value;
        
         });
       
-        console.log("User inputs: ", values); //log user input
+        //form validation
+       if($('#form').find("firstName").val()=== ""){
+   $('.nameResponse').append("First Name is required");
+    return false;
+       } else if($('#form').find("email").val()=== ""){
+        $('.response').append("Email is required");
+        return false;
+       }else if($('#form').find("message").val()=== ""){
+        $('.messageResponse').append("Message is reqiured");
+        return false;
+       }else{
 
-        //varify email
-        if (values['email'] == null) {
-            console.log("Email is required");
-            $('.response').append("Email is required");
-            return false;
-        } else if (values['fname'] == null) {
-            console.log("First name is required");
-            $('.nameResponse').append("First Name is required");
-            return false;
-        }
+        //do http post
+        console.log("User inputs: ", values);
+       }
+         //log user input
+
+
+
+
+
+
+
+        // if($("#fname").value === null){
+        // console.log("First name is required");
+        // $('.nameResponse').append("First Name is required");
+       
+        // }else if($("#message").value === null){
+        //     console.log("Message is reqiured")
+        //     $('.messageResponse').append("Message is reqiured");
+        
+        // } else if($("#email").value === null){
+        //      console.log("Email is required");
+        //     $('.response').append("Email is required");
+        //     return false;
+        // }else {
+     
+        // }
+      
     });
 });
