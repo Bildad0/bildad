@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-
     jQuery('.tabs .tab-links a').on('click', function(e) {
         var currentAttrValue = jQuery(this).attr('href');
         jQuery('.tabs ' + currentAttrValue).fadeIn(400).siblings().hide(); // Show/Hide Tabs
@@ -11,53 +10,46 @@ $(document).ready(function() {
 
 
 // submiting form 
-    $('#form').submit(function(e) {
-        e.preventDefault();
+$('#form').submit(function(e) {
+    const values = {};
 
-        const values = {};
-        $.each($('#form').serializeArray(), function(i, field) {
-            values[field.name] = field.value;
-       
-        });
-      
-        //form validation
-       if($('#form').find("firstName").val()=== ""){
-   $('.nameResponse').append("First Name is required");
-    return false;
-       } else if($('#form').find("email").val()=== ""){
-        $('.response').append("Email is required");
-        return false;
-       }else if($('#form').find("message").val()=== ""){
-        $('.messageResponse').append("Message is reqiured");
-        return false;
-       }else{
-
-        //do http post
-        console.log("User inputs: ", values);
-       }
-         //log user input
-
-
-
-
-
-
-
-        // if($("#fname").value === null){
-        // console.log("First name is required");
-        // $('.nameResponse').append("First Name is required");
-       
-        // }else if($("#message").value === null){
-        //     console.log("Message is reqiured")
-        //     $('.messageResponse').append("Message is reqiured");
+    e.preventDefault();
         
-        // } else if($("#email").value === null){
-        //      console.log("Email is required");
-        //     $('.response').append("Email is required");
-        //     return false;
-        // }else {
-     
-        // }
-      
+    $("#submit").prop('disabled', true);
+        
+    $.each($('#form').serializeArray(), function(_i, field) {
+        values[field.name] = field.value;
+       
     });
+     
+
+    setTimeout(function(){
+        $('form').trigger("reset");
+        $("#submit").prop('disabled', false);
+    },500);
+
+if(values.isEmpty){
+    return false;
+       } else
+       {
+          if(values["firstName"]==""){
+            $('.nameResponse').append("First Name is required");
+            return false;
+            } else if(values["email"]==""){
+             $('.response').append("Email is required");
+             return false;
+            }else if( values["message"]==""){
+             $('.messageResponse').append("Message is required");
+             return false;
+            }else{
+             //do http post
+             console.log("User inputs: ", values);
+             
+             $.post("form.php", values, function(response){
+                console.log("Api response: ", response);
+             });
+            }
+       } 
+});
+
 });
