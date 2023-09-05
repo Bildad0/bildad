@@ -17,18 +17,19 @@
 </head>
 
 <body class="dark:text-white">
-    <header class="bg-gradient-to-t from-gray-900 to-black">
+    <header class="bg-gradient-to-t from-gray-900 to-black h-20vh">
         <nav class="grid grid-cols-3 justify-between p-1 sm:p-1 md:p-4 lg:p-4  xl:p-4 text-bold text-xl font-mono text-amber-600">
             <h1 class="md:ml-2 lg:ml-3 xl:ml-3">Bildad</h1>
-
-            <i class="fa-solid fa-bars md:invisible  lg:invisible xl:invisible mr-auto ml-50" id="menu"></i>
-
-            <ul class="invisible sm:invisible md:visible  lg:visible  xl:visible flex flex-row gap-3">
-                <li class="t-hover"><a href="#about">About</a></li>
-                <li class="t-hover"><a href="#projects-section">Projects</a></li>
-                <li class="t-hover"><a href="#contact-me">Contact</a></li>
-            </ul>
-
+              <div class="invisible sm:invisible md:visible  lg:visible  xl:visible ">
+                <ul class="flex flex-row gap-3 ml-auto mr-0">
+                    <li class="t-hover"><a href="#about">About</a></li>
+                    <li class="t-hover"><a href="#projects-section">Projects</a></li>
+                    <li class="t-hover"><a href="#contact-me">Contact</a></li>
+                </ul>
+            </div>
+          <div class=" flex sm:flex md:invisible  lg:invisible xl:invisible ml-auto mr-2">
+            <i class="fa-solid fa-bars" id="menu"></i>
+          </div>
         </nav>
     </header>
     <main class="">
@@ -226,11 +227,11 @@
                             <input type="text" name="firstName"  id="fname" class="p-1 w-1/2 " placeholder="First Name ">
                             <input type="text" name="lastName" id="lname" class="p-1 w-1/2 " placeholder="Last Name ">
                         </div>
-                        <div class="nameResponse text-red-600 break-words text-start"></div>
+                        <p class="nameResponse text-red-600 break-words text-start"></p>
                         <input type="email" name="email" id="email " class="p-1 w-1/2 email " placeholder="Email ">
-                        <div class="response text-red-600  break-words text-start"></div>
+                        <p class="response text-red-600  break-words text-start"></p>
                         <textarea type="text " name="message" id="message" class="p-1 w-1/2 message " placeholder="Message "></textarea>
-                        <div class="messageResponse text-red-600  break-words text-start "></div>
+                        <p class="messageResponse text-red-600  break-words text-start "></p>
                         <button type="button" name="submit" id="submit" class="p-1 text-white w-1/2 bg-slate-700 text-center">Send</button>
                     </form>
                 </div>

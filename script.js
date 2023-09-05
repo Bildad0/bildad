@@ -7,6 +7,22 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+//set sticky on scroll effect
+var stickyTop =$('header').offset().top;
+$(window).scroll(function(){
+    var windowTop =$(window).scrollTop();
+    if(stickyTop< windowTop){
+        $('header').css('position', 'fixed');
+        $('header').css('width','100%');
+    }else{
+        $('header').css('position','relative');
+        $('header').css('width','100%');
+        $('header').css('z-index','5');
+    }
+})
+
+
+
 
 
 // submiting form 
