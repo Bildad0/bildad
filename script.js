@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 
 // submiting form 
-$('#form').submit(function(e) {
+$('#submit').click(function(e) {
     const values = {};
 
     e.preventDefault();
@@ -44,9 +44,34 @@ if(values.isEmpty){
             }else{
              //do http post
              console.log("User inputs: ", values);
+
+            //  $.post("/form.php", values, function(response){
+            //     console.log("Api response: ", response);
+            //  }); 
              
-             $.post("form.php", values, function(response){
-                console.log("Api response: ", response);
+            const MongoDB_BASE_API = "https://ap-south-1.aws.data.mongodb-api.com/app/data-vvges/endpoint/data/v1"
+            
+                    var headers ={
+                        'Content-Type':'application/json',
+                        'Access-Control-Request-Headers':'*',
+                        'api-key':'l1RSobxFUBlmM9oIsJb8YLStl0Fzm0UXKJ6LfdFDZvJ10G8uFe5ouWcbOPgGAFHa'
+                    };
+                    var requesteData ={
+                        dataSource:'cluster0',
+                        database:'FeedBack',
+                        projection:values,
+                    }
+             $.ajax({
+                url:MongoDB_BASE_API,
+                type:"POST",
+                headers: headers,
+                data:JSON.stringify(requesteData),
+                success:function(response){
+                    console.log(response);
+                },
+                error:function(xhr, status,error){
+                    console.error(error);
+                 }, 
              });
             }
        } 

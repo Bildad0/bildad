@@ -221,7 +221,7 @@
             </div>
             <div class="col-span-1 ">
                 <div class="contact">
-                    <form class="p-7 m-4 gap-3 grid grid-cols-1 p-6 text-black " id="form" method="post">
+                    <form class="p-7 m-4 gap-3 grid grid-cols-1 p-6 text-black " id="form" method="post" action="/form.php">
                         <div class="flex fle-row gap-3">
                             <input type="text" name="firstName"  id="fname" class="p-1 w-1/2 " placeholder="First Name ">
                             <input type="text" name="lastName" id="lname" class="p-1 w-1/2 " placeholder="Last Name ">
@@ -231,7 +231,7 @@
                         <div class="response text-red-600  break-words text-start"></div>
                         <textarea type="text " name="message" id="message" class="p-1 w-1/2 message " placeholder="Message "></textarea>
                         <div class="messageResponse text-red-600  break-words text-start "></div>
-                        <button type="submit" name="submit" id="submit" class="p-1 text-white w-1/2 bg-slate-700 text-center">Send</button>
+                        <button type="button" name="submit" id="submit" class="p-1 text-white w-1/2 bg-slate-700 text-center">Send</button>
                     </form>
                 </div>
 
