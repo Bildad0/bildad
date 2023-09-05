@@ -7,7 +7,8 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
-//set sticky on scroll effect
+
+
 var stickyTop =$('header').offset().top;
 $(window).scroll(function(){
     var windowTop =$(window).scrollTop();
@@ -22,6 +23,11 @@ $(window).scroll(function(){
 })
 
 
+//menu click
+$('#menu').click(function(){
+    console.log("menu clicked");
+    $('.menu-popup').slideToggle();
+})
 
 
 
