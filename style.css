@@ -176,6 +176,11 @@ font-family: 'Roboto', sans-serif; */
     nav ul {
         display: none;
     }
+.About-section{
+    background-attachment: fixed;
+    width: 100;
+}
+    
     nav {
         align-items: stretch;
         justify-content: space-between;
@@ -203,7 +208,12 @@ font-family: 'Roboto', sans-serif; */
     .tab-links li {
         float: center;
     }
+    .About-section{
+        background-attachment: fixed;
+        width: 100;
+    }
 }
+
 
 
 /* Medium devices (landscape tablets, 768px and up) */
