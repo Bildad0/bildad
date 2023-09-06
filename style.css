@@ -24,7 +24,8 @@ body {
 
 .About-section {
     opacity: 2;
-    background-image: url("https://scitechdaily.com/images/First-Quantum-Programming-Language.jpg");
+    /* background-image: url("https://scitechdaily.com/images/First-Quantum-Programming-Language.jpg"); */
+    background-image: url("https://i.pinimg.com/564x/57/03/69/57036949b23e458018c1991c8d9d0607.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

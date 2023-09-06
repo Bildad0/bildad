@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Edu+SA+Beginner:wght@400;600&family=Handjet:wght@600;800&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,300;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4d0eb95ce6.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Bildad Owuor</title>
 </head>
@@ -35,8 +36,8 @@
         <div class="menu-popup"></div>
     </header>
     <main class="">
-        <div class="flex flex-col h-100vh font-bold tracking-wide justify-center items-center About-section pb-6 text-white pt-1 sm:pt-1 md:pt-8 lg:pt-15 xl:pt-16 ">
-            <div class="bg-white m-3">
+        <div class="flex flex-col  font-bold tracking-wide justify-center items-center About-section pb-6 text-white pt-1 sm:pt-1 md:pt-8 lg:pt-15 xl:pt-16 ">
+            <div class="m-3 rounded-md" id="progress">
                 <p class="text-amber-600 p-1">I am <i>Bildad Owuor</i></p>
             </div>
 
@@ -46,36 +47,26 @@
             </div>
         </div>
 
-        <div class="gap-4 bg-black gap-3  p-4 justify-around grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3" id="about">
-            <div class="text-white gap-3">
-                <h1 class="text-slate-300 p-4 text-5xl antialiased font-bold tracking-wide thick-text text-center">About me</h1>
+        <div class="gap-4 bg-black gap-3 h-full  p-4 justify-around grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3" id="about">
+            <div class="text-white gap-3 p-6">
+                <h1 class="text-slate-300 p-4 text-5xl antialiased font-bold tracking-wide thick-text text-center">Skills</h1>
+                
+                <!--TODO: use cards here -->
                 <section class="">
-                    <h4>Software Development and Design</h4>
-                    <div class="bg-gray-300 rounded-full h-3 m-3">
-                        <div class="bg-amber-500 justify-center h-3 text-sm" style="width:70%">
-
-                        </div>
-                    </div>
+                    <h4>System and Network Administration</h4>
+                  <p></p>
                 </section>
-                <section>
-                    <h4>IT technical support</h4>
-                    <div class="bg-gray-300 rounded-full h-3 m-3">
-                        <div class="bg-amber-500 justify-center h-3 text-sm" style="width:80%">
-
-                        </div>
-                    </div>
+                <section class="pt-3">
+                    <h4>Technical support</h4>
+                <p></p>
                 </section>
-                <section>
+                <section class="pt-3">
                     <h4>Database Administration</h4>
-                    <div class="bg-gray-300 rounded-full h-3 m-3">
-                        <div class="bg-amber-500 justify-center h-3 text-sm" style="width:80%">
-
-                        </div>
-                    </div>
+              <p></p>
                 </section>
             </div>
             <div class="justify-center">
-                <img src="https://th.bing.com/th/id/OIP.zgVd2ZVyomyFW6l3NrP9VwHaE0?pid=ImgDet&rs=1" loading="lazy" />
+                <img src="https://th.bing.com/th/id/OIP.zgVd2ZVyomyFW6l3NrP9VwHaE0?pid=ImgDet&rs=1" loading="lazy" class="mt-4" />
             </div>
             <div class="text-white">
                 <h1 class="text-center text-slate-300 p-4 text-5xl antialiased font-bold tracking-wide thick-text">Who Am I</h1>
@@ -100,43 +91,43 @@
             </div>
         </div>
 
-        <!-- Services section -->
-        <div class="bg-slate-950  text-center p-6">
-            <h1 class="text-slate-300 p-4 text-5xl antialiased font-bold tracking-wide thick-text">Services</h1>
+       <!-- Services section -->
+       <div class="bg-transparent About-section text-center p-6">
+        <h1 class="text-slate-300 p-4 text-5xl antialiased font-bold tracking-wide thick-text">What I can do</h1>
 
-            <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-3 justify-around">
-                <div class="bg-black text-white p-4">
-                    <div></div>
-                    <div>
-                        <h3 class="">Database Administration</h3>
-                        <p class="leading-loose"> Responsible for maintaining, securing, and operating databases and also ensures that data is correctly stored and retrieved.</p>
-                    </div>
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-3 justify-around">
+            <div class="bg-black text-white p-4">
+                <div></div>
+                <div>
+                    <h3 class="">Database Administration</h3>
+                    <p class="leading-loose"> Responsible for maintaining, securing, and operating databases and also ensures that data is correctly stored and retrieved.</p>
                 </div>
-                <div class="bg-black text-white p-4">
-                    <div></div>
-                    <div>
-                        <h3>IT technical support</h3>
-                        <p>Help maintain, manage and repair IT systems. Also perform fault diagnosis and repair, hardware and software installation, network troubleshooting and software configuration.</p>
-                    </div>
+            </div>
+            <div class="bg-black text-white p-4">
+                <div></div>
+                <div>
+                    <h3>IT technical support</h3>
+                    <p>Help maintain, manage and repair IT systems. Also perform fault diagnosis and repair, hardware and software installation, network troubleshooting and software configuration.</p>
                 </div>
-                <div class="bg-black text-white p-4">
-                    <div></div>
-                    <div>
-                        <h3>Software Development and Design</h3>
-                        <p>I can design develope and implement secure software systems.</p>
-                    </div>
+            </div>
+            <div class="bg-black text-white p-4">
+                <div></div>
+                <div>
+                    <h3>Software Development and Design</h3>
+                    <p>I can design develope and implement secure software systems.</p>
                 </div>
-                <div class="bg-black text-white p-4 invisible">
-                    <div></div>
-                    <div>
-                        <h3>Photography and photo editing</h3>
-                        <p>I have photography skills with a work experience with pixeto media photographers. </p>
-                    </div>
+            </div>
+            <div class="bg-black text-white p-4 invisible">
+                <div></div>
+                <div>
+                    <h3>Photography and photo editing</h3>
+                    <p>I have photography skills with a work experience with pixeto media photographers. </p>
                 </div>
             </div>
         </div>
-
+    </div>
         <!-- portfolio section -->
+       
         <div class="bg-black text-white" id="projects-section">
             <h1 class="text-center text-slate-300 p-4 text-5xl antialiased font-bold tracking-wide thick-text">Portfolio</h1>
             <div class="justify-center">

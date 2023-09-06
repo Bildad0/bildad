@@ -1,5 +1,24 @@
 $(document).ready(function() {
 
+//progress
+
+$('#progress').progressbar({
+    value:function(value){
+        if(value<=0){
+            $('#progress').css('background','')
+            return ++value;
+        }else if(value=100){
+            $('#progress').css('background','transparent');
+            return value;
+        }
+    }
+
+});
+
+
+
+
+
     jQuery('.tabs .tab-links a').on('click', function(e) {
         var currentAttrValue = jQuery(this).attr('href');
         jQuery('.tabs ' + currentAttrValue).fadeIn(400).siblings().hide(); // Show/Hide Tabs
@@ -37,8 +56,7 @@ $('#work-btn').hover(function(){
     $(this).css('background','brown');
   
 }, function(){
-    $(this).css('background', 'transparent');
-   
+    $(this).css('background', 'transparent');  
 })
 
 $('#hire-btn').hover(function(){
@@ -88,7 +106,7 @@ if(values.isEmpty){
             //     console.log("Api response: ", response);
             //  }); 
              
-            const MongoDB_BASE_API = "https://ap-south-1.aws.data.mongodb-api.com/app/data-vvges/endpoint/data/v1"
+            const MongoDB_BASE_API = "https://ap-south-1.aws.data.mongodb-api.com/app/data-vvges/"
             
                     var headers ={
                         'Content-Type':'application/json',
@@ -101,7 +119,7 @@ if(values.isEmpty){
                         projection:values,
                     }
              $.ajax({
-                url:MongoDB_BASE_API,
+                url:`${MongoDB_BASE_API}/endpoint/data/v1`,
                 type:"POST",
                 headers: headers,
                 data:JSON.stringify(requesteData),
