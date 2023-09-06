@@ -31,6 +31,23 @@ $('#menu').click(function(){
 
 
 
+//btn hover
+
+$('#work-btn').hover(function(){
+    $(this).css('background','brown');
+  
+}, function(){
+    $(this).css('background', 'transparent');
+   
+})
+
+$('#hire-btn').hover(function(){
+    $(this).css('background','brown');
+}, function(){
+$(this).css('background','white');
+
+})
+
 // submiting form 
 $('#submit').click(function(e) {
     const values = {};
