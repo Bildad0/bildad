@@ -3,21 +3,32 @@ $(document).ready(function() {
 //progress
 
 $('#progress').progressbar({
-    value:0,
-    create:function(value){
-        if(value<=100){
-            $('#progress').css('background','')
-            return ++value;
-        }else {
-            $('#progress').css('background','transparent');
-            return false;
-        }
-    }
+value:0,
+max:100, 
+
+// function(value){
+//     for(i=value; i<100; i++){
+//         $('#progress').css('background','white')
+//         return value;
+//     }
+// }
 
 });
 
+//slide show
 
+setTimeout(function(){
+    $( "slide1" ).hide( "drop", { direction: "down" }, "slow" );
+}, 1000)
+// var child = $('#slide-show').children('#slide');
 
+// for (i=0; i<child.lenght; i++){
+//     setTimeout(function(){
+//         $('#slide').slideDown(10, function(){
+//             $(this).css('display','none');
+//         });
+//     },500);
+// }
 
 
     jQuery('.tabs .tab-links a').on('click', function(e) {
