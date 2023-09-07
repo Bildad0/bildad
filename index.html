@@ -23,7 +23,6 @@
               <div class="invisible sm:invisible md:visible  lg:visible  xl:visible ">
                 <ul class="flex flex-row gap-3 ml-auto mr-0">
                     <li class="t-hover"><a href="#about">About</a></li>
-                    <li class="t-hover"><a href="#projects-section">Projects</a></li>
                     <li class="t-hover"><a href="#contact-me">Contact</a></li>
                 </ul>
             </div>
@@ -39,7 +38,7 @@
             </div>
 
             <div class="flex flex-row gap-3 m-10">
-                <button class="rounded-full button-border  border-blue-200 bg-transparent p-1 text-white border-2" id="work-btn"><a href="#projects-section"><p>View Work</p></a></button>
+                <!-- <button class="rounded-full button-border  border-blue-200 bg-transparent p-1 text-white border-2" id="work-btn"><a href="#projects-section"><p>View Work</p></a></button> -->
                 <button class="rounded-full button-border  bg-slate-200 p-2 text-black border-2 border-black" id="hire-btn"> <a href="https://docs.google.com/document/d/1QxWzkWvXpNcxfgXF0IEo-tZtz6ruH6iVweSga6DlxO0/edit?usp=drive_link" target="_blank">Hire Me!</a></button>
             </div>
         </div>
@@ -116,7 +115,7 @@
             </div>
         </div>
     </div>
-    
+
         <!-- portfolio section -->
         <!-- <div class="bg-black text-white" id="projects-section">
             <h1 class="text-center text-slate-300 p-4 text-5xl antialiased font-bold tracking-wide thick-text">Portfolio</h1>
@@ -172,20 +171,11 @@
         </div> -->
 
         <!-- Contact me -->
-        <div class="grid justify-around grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 place-content-center bg-black text-center gap-3 " id="contact-me ">
-            <div class="contact-background text-white col-span-1 text-start ">
-                <div class="justify-center text-start p-2 m-8 ">
-                    <ul class="gap-4 leading-9 ">
-                        <li>PHONE : +2547 0052 4820</li>
-                        <li>ADDRESS : Nairobi,Kenya</li>
-                        <li>EMAIL : bildadowuor@gmail.com</li>
-                    </ul>
-                </div>
-
-            </div>
-            <div class="col-span-1 ">
-                <div class="contact">
-                    <form class="p-7 m-4 gap-3 grid grid-cols-1 p-6 text-black " id="form" method="post" action="/form.php">
+        <div class="justify-around  place-content-center bg-black text-center gap-3 " id="contact-me ">
+            <div class="contact-background ">
+                <div class="contact w-[100%] sm:w-[100%] md:w-[40%] lg:w-[40%] h-auto mt-20 mb-20">
+                    <h1 class="text-center text-6xl">Contact</h1>
+                    <form class="p-7 m-4 gap-3 grid grid-cols-1 rounded-md p-6 text-black " id="form" method="post" action="/form.php">
                         <div class="flex fle-row gap-3">
                             <input type="text" name="firstName"  id="fname" class="p-1 w-1/2 " placeholder="First Name ">
                             <input type="text" name="lastName" id="lname" class="p-1 w-1/2 " placeholder="Last Name ">
