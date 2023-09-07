@@ -3,13 +3,14 @@ $(document).ready(function() {
 //progress
 
 $('#progress').progressbar({
-    value:function(value){
-        if(value<=0){
+    value:0,
+    create:function(value){
+        if(value<=100){
             $('#progress').css('background','')
             return ++value;
-        }else if(value=100){
+        }else {
             $('#progress').css('background','transparent');
-            return value;
+            return false;
         }
     }
 
@@ -32,9 +33,11 @@ var stickyTop =$('header').offset().top;
 $(window).scroll(function(){
     var windowTop =$(window).scrollTop();
     if(stickyTop< windowTop){
+        $('header').css('display','flex');
         $('header').css('position', 'fixed');
         $('header').css('width','100%');
     }else{
+        $('header').css('display','none');
         $('header').css('position','relative');
         $('header').css('width','100%');
         $('header').css('z-index','5');

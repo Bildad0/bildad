@@ -7,6 +7,11 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
+
+header{
+    display: none;
+    justify-content: space-between;
+}
 .logo{
     font-size: 24px;
     font-weight: 800;
@@ -138,6 +143,7 @@ li.active a:hover {
 }
 
 .tab-content {
+    display: flex;
     padding: 15px;
     border-radius: 3px;
     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
@@ -199,6 +205,12 @@ font-family: 'Roboto', sans-serif; */
     .tab .image6 {
         grid-column-end: span 3;
     }
+    .tab-content{
+        flex-direction: column;
+        column-gap: 3;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
@@ -207,6 +219,13 @@ font-family: 'Roboto', sans-serif; */
 @media only screen and (min-width: 600px) {
     .tab-links li {
         float: center;
+    }
+    .tab-content{
+        flex-direction: row;
+        column-gap: 3;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
