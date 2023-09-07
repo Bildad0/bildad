@@ -177,8 +177,7 @@ font-family: 'Roboto', sans-serif; */
         display: none;
     }
 .About-section{
-    background-attachment: fixed;
-    width: 100;
+    background-attachment: scroll;
 }
     
     nav {
@@ -194,6 +193,7 @@ font-family: 'Roboto', sans-serif; */
         display: grid;
         grid-template-columns: auto auto auto auto;
     }
+
     .tab .image1,
     .tab .image3,
     .tab .image6 {
@@ -208,12 +208,7 @@ font-family: 'Roboto', sans-serif; */
     .tab-links li {
         float: center;
     }
-    .About-section{
-        background-attachment: fixed;
-        width: 100;
-    }
 }
-
 
 
 /* Medium devices (landscape tablets, 768px and up) */
