@@ -30,6 +30,9 @@ setTimeout(function(){
 //     },500);
 // }
 
+//animation on scroll
+
+
 
     jQuery('.tabs .tab-links a').on('click', function(e) {
         var currentAttrValue = jQuery(this).attr('href');
@@ -42,7 +45,11 @@ setTimeout(function(){
 
 var stickyTop =$('header').offset().top;
 $(window).scroll(function(){
-    var windowTop =$(window).scrollTop();
+    var windowTop = Math.round($(window).scrollTop());
+    var scrollHeight = $(document).height();
+    console.log("Device height: " ,scrollHeight);
+    console.log("Scroll position: ", windowTop);
+        
     if(stickyTop< windowTop){
         $('header').css('display','flex');
         $('header').css('position', 'fixed');
@@ -53,6 +60,21 @@ $(window).scroll(function(){
         $('header').css('width','100%');
         $('header').css('z-index','5');
     }
+
+    if(windowTop=scrollHeight-20){
+        $("#fadeOut").fadeOut();
+        $("#fadeIn").fadeIn();
+    }else {
+
+        $("#fadeOut").fadeIn();
+        $("#fadeIn").fadeOut();
+    }
+//    if(windowTop=scrollHeight-windowTop){
+// console.log("new height is:", scrollHeight-windowTop);
+//    }else{
+
+//    }
+    
 })
 
 
