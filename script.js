@@ -61,13 +61,13 @@ $(window).scroll(function(){
         $('header').css('z-index','5');
     }
 
-    if(windowTop=scrollHeight-20){
-        $("#fadeOut").fadeOut();
+    if(windowTop=scrollHeight-windowTop) {
+      
         $("#fadeIn").fadeIn();
     }else {
 
         $("#fadeOut").fadeIn();
-        $("#fadeIn").fadeOut();
+        
     }
 //    if(windowTop=scrollHeight-windowTop){
 // console.log("new height is:", scrollHeight-windowTop);
