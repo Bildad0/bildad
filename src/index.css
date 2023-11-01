@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply shadow-md py-3 px-6 rounded-md transition duration-300 border-2 border-gray-100 hover:bg-gray-300 hover:text-black;
+}
