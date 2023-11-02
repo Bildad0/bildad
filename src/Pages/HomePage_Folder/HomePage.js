@@ -20,7 +20,7 @@ const HomePage = () => {
                     <h4 >HI, my name is</h4>
                     <h1 className="md:text-5xl text-3xl font-bold my-6  flex-1 " >Bildad Owuor.</h1>
                     <h1 className="md:text-6xl text-4xl font-bold mb-5"  > I build things for the web </h1>
-                    <p className="w-full md:w-2/3" >I'm a software Developer specializing in building  Website and App (Flutter) .</p>
+                    <p className="w-full md:w-2/3" >I'm a software Developer specializing in building  Website and mobile App (Flutter) .</p>
 
                     <div className="pt-10">
                         <button className="btn" ><a href=" mailto:bildadowuor@gmail.com">Get In Touch</a></button>
