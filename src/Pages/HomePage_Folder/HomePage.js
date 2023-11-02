@@ -22,8 +22,9 @@ const HomePage = () => {
                     <h1 className="md:text-6xl text-4xl font-bold mb-5"  > I build things for the web </h1>
                     <p className="w-full md:w-2/3" >I'm a software Developer specializing in building  Website and mobile App (Flutter) .</p>
 
-                    <div className="pt-10">
+                    <div className="pt-10 space-x-4">
                         <button className="btn" ><a href=" mailto:bildadowuor@gmail.com">Get In Touch</a></button>
+                        <button className="btn"><a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/e/2PACX-1vRQXma34WkdmSsufidtFP124gt6TAiUMPq7B2iSTCjCrEGmAJvIkAS5UN-hNQyQFJ5lGrPEFexf8O5Q/pub">View My CV</a></button>
                     </div>
                 </div>
             </div>

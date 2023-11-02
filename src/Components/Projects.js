@@ -54,7 +54,7 @@ const Projects = () => {
 
                                         </div>
                                         <div className="ProjectCta  ">
-                                            <a href="" target="_blank" rel="noopener noreferrer" className=" text-2xl mb-3 " > <FiExternalLink /> </a>
+                                            <a href={item.link} target="_blank" rel="noopener noreferrer" className=" text-2xl mb-3 " > <FiExternalLink /> </a>
                                             <a href={item.link} target="_blank" rel="noopener noreferrer" className="font-medium  cool-link  " >Visit Website</a>
 
                                         </div>
