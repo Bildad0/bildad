@@ -188,19 +188,19 @@ body {
   width: 40%;
   height: 2px;
   background-color: #fff;
-  transition: width 0.3s;
+  -o-transition: width 0.3s;
   -webkit-transition: width 0.3s;
   -moz-transition: width 0.3s;
   -ms-transition: width 0.3s;
-  -o-transition: width 0.3s;
+  transition: width 0.3s;
 }
 .ProjectCta .cool-link:hover::after {
   width: 100%;
-  transition: width 0.3s;
+  -o-transition: width 0.3s;
   -webkit-transition: width 0.3s;
   -moz-transition: width 0.3s;
   -ms-transition: width 0.3s;
-  -o-transition: width 0.3s;
+  transition: width 0.3s;
 }
 .ProjectCta-link::after {
   content: "";
@@ -208,19 +208,19 @@ body {
   width: 0%;
   height: 2.5px;
   background-color: #fff;
-  transition: width 0.3s;
+  -o-transition: width 0.3s;
   -webkit-transition: width 0.3s;
   -moz-transition: width 0.3s;
   -ms-transition: width 0.3s;
-  -o-transition: width 0.3s;
+  transition: width 0.3s;
 }
 .ProjectCta-link:hover::after {
   width: 100%;
-  transition: width 0.3s;
+  -o-transition: width 0.3s;
   -webkit-transition: width 0.3s;
   -moz-transition: width 0.3s;
   -ms-transition: width 0.3s;
-  -o-transition: width 0.3s;
+  transition: width 0.3s;
 }
 /* project gallery */
 

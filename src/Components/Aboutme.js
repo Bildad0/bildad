@@ -24,7 +24,7 @@ const Aboutme = () => {
         <div className="flex  flex-col lg:flex-row justify-between">
           <div className="w-full lg:w-1/2 items-center " data-aos="fade-right"  >
 
-            <p className="text-lg text-gray-400 " > Hello! My name is Bildad and I enjoy creating things that live on the
+            <p className="text-lg text-gray-400 " > Hello! I enjoy creating things that live on the
               internet.I am an IT graduate from Technical University of Mombasa And Currently a Frontend React & Flutter developer  </p>
 
             <p className="text-lg text-gray-400 py-6 "  >I Am Hardworking ,Creative And Enthusiastic Toward My Work. I Will Be Glad To Work With You And Showcase My Skills.</p>
