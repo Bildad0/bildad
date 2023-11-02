@@ -73,7 +73,7 @@ const Projects = () => {
                     }
 
                 </div>
-            <a href="https://github.com/Bildad0?tab=repositories" target="_blank" rel="noopener noreferrer" className=" bg-transparent border-gray-400 border-border1 px-8 py-3 mt-5 rounded-sm mx-auto font-bold tracking-wider hover:bg-white  hover:text-gray-700 transition duration-200 ease-in-out " >More Projects</a>
+            <a href="https://github.com/Bildad0?tab=repositories" target="_blank" rel="noopener noreferrer" className=" bg-transparent text-center border-gray-400 border-border1 px-8 py-3 mt-5 rounded-sm mx-auto font-bold tracking-wider hover:bg-white  hover:text-gray-700 transition duration-200 ease-in-out " >More Projects</a>
 
             </div>
         </section>
