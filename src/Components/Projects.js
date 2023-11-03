@@ -32,7 +32,7 @@ const Projects = () => {
     return (
         <section className="bg-SecondColor">
             <div className="containers px-34 lg:px-12 xl:px-32  2xl:px-44 py-30  ">
-                <h1 className="py-20 text-center text-3xl font-semibold "  >My Previous Work </h1>
+                <h1 className="py-20 px-11 text-center text-3xl font-semibold text-gray-400 "  >Some of the projects I have been playing around with</h1>
 
                 {/* Add work experince here */}
                 {/* <div className="flex w-full flex-wrap">
@@ -46,19 +46,21 @@ const Projects = () => {
                     
                 </div> */}
 
-                <div className="flex w-full flex-wrap ">
+                <div className="flex w-full flex-wrap " id="portfolio">
                     {
                         ProjectArray.map((item, i) => {
                             return (
                                 <div key={i} className="Card w-full lg:w-1/2 px-2 pt-10 mb-14" >
-                                    <img src={item.image} alt="img" data-aos="zoom-in-up" loading="lazy" />
+                                    <img src={item.image} alt="img" data-aos="zoom-in-up" loading="lazy" className="px-8 md:px-32 lg:px-32 xl:px-32" />
                                     <div className=" ProjectCta-grid" >
                                         <div className="">
-                                            <h1 className="text-2xl font-medium pb-3 " >{item?.name}</h1>
+                                            <h1 className="text-2xl font-medium pb-3 " >
+                                                <a href={item.link} target="_blank" rel="noopener noreferrer" className="">{item?.name}</a>
+                                                </h1>
                                             <p className="font-medium" >{item?.desc}</p>
 
                                         </div>
-                                        <div className="ProjectCta  ">
+                                        <div className="ProjectCta invisible md:visible lg:visible xl:visible ">
                                             <a href={item.link} target="_blank" rel="noopener noreferrer" className=" text-2xl mb-3 " > <FiExternalLink /> </a>
                                             <a href={item.link} target="_blank" rel="noopener noreferrer" className="font-medium  cool-link  " >Visit Website</a>
 

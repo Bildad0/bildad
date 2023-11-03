@@ -18,29 +18,27 @@ function App() {
 
     
     <Router>
-    <ReactNavbar burgerColor="white" logo={'/DevLogo1.png'}
- 
-  link1Color="rgba(255,255,255,0.8)"
-    
-    link1Text="Home"
-    link2Text="About"
-    link3Text="Portfolio"
-    link4Text="Contact"
-    link1Url="/"
-    link2Url="/about"
-    link3Url="/portfolio"
-    link4Url="/contact"
-    link1Size="2vmax"
-    link1Family="cursive"
-    link1Margin="1.5vmax"
-    link2Margin="0vmax"
-    link4Margin="1vmax"
-    searchIcon={false}
-    cartIcon={false}
-    profileIcon={false}
+      <div className="visible sm:visible md:invisible lg:invisible xl:invisible">
+      <ReactNavbar burgerColor="white" logo={'/DevLogo1.png'}
 
-     />
-
+link1Color="rgba(255,255,255,0.8)"
+  
+  link1Text="Home"
+  link2Text="About"
+  link3Text="Portfolio"
+  link1Url="#up"
+  link2Url="#about"
+  link3Url="#portfolio"
+  link1Size="2vmax"
+  link1Family="cursive"
+  link1Margin="1.5vmax"
+  link2Margin="0vmax"
+  searchIcon={false}
+  cartIcon={false}
+  profileIcon={false}
+   />
+      </div>
+      
     <Switch>
 
       <Route component={HomePage} />

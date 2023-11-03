@@ -15,6 +15,22 @@ body {
   overflow-x: hidden;
 }
 
+.my-nav-bar{
+  font-family: cursive !important;
+}
+
+.my-nav-bar a:active{
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+.my-nav-bar li:hover{
+  text-decoration-line: underline;
+  text-decoration-color: gray;
+  }
+  .my-nav-bar li:nth-child(1){
+text-decoration: underline;
+  }
+
 .menuBurger {
   height: 4.1vmax !important ;
 }
@@ -30,7 +46,7 @@ body {
   position: absolute;
   left: 0;
 }
-/* 
+
 .AboutImg {
   position: relative;
 }
@@ -68,7 +84,7 @@ body {
   top: 15px;
   left: 15px;
   cursor: pointer;
-} */
+}
 
 /* About Me */
 
@@ -127,7 +143,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 80%;
   display: block;
   box-sizing: border-box;
 }
@@ -152,7 +168,7 @@ body {
   content: "";
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background: #50dfdb;
   animation: animate 4s linear infinite;
 }
@@ -166,7 +182,7 @@ body {
     transform: scaleX(1);
     transform-origin: left;
   }
-  50.1% {
+  50.9% {
     transform: scaleX(1);
     transform-origin: right;
   }
@@ -177,10 +193,6 @@ body {
   }
 }
 
-/* project gallery */
-/* header.sticky .navigation li a:hover{
-    border: 1px solid red;
-} */
 
 .ProjectCta .cool-link::after {
   content: "";
@@ -226,10 +238,6 @@ body {
 
 /* social media */
 .social-media {
-  /* position: fixed;
-  top: 66%;
-  left: 3px;
-  z-index: 100; */
   width: 40px;
   position: fixed;
   bottom: 0px;
