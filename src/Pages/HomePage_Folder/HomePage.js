@@ -26,7 +26,7 @@ const HomePage = () => {
                 </div>
                 <div className="font-Poppins pt-28 md:pt-52 ">
                     <h4 >Hi, my name is</h4>
-                    <h1 className="md:text-5xl text-3xl font-bold my-6  flex-1 name" >Bildad <span  data-aos="fade-right" className="text-gray">Owuor</span></h1>
+                    <h1 className="md:text-5xl text-3xl font-bold my-6  flex-1 name" >Bildad <span  data-aos="fade-right" className="text-gray-400">Owuor</span></h1>
                     <h1 className="md:text-6xl text-4xl font-bold mb-5"  > I build things for the web </h1>
                     <p className="w-full md:w-2/3" >Am a person who likes fixing things, be it technically or by using a computer.</p>
 

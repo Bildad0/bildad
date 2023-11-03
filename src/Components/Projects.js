@@ -1,8 +1,6 @@
-import React, { useEffect } from "react";
-import Aos from "aos";
+import React from "react";
 import "aos/dist/aos.css"
 import { FiExternalLink } from "react-icons/fi";
-import {MdWork} from "react-icons//md";
 
 const Projects = () => {
  
@@ -51,10 +49,10 @@ const Projects = () => {
                         ProjectArray.map((item, i) => {
                             return (
                                 <div key={i} className="Card w-full lg:w-1/2 px-2 pt-10 mb-14" >
-                                    <img src={item.image} alt="img" data-aos="zoom-in-up" loading="lazy" className="px-8 md:px-32 lg:px-32 xl:px-32" />
+                                    <img src={item.image} alt="img" data-aos="zoom-in-up" loading="lazy" className="px-8 sm:px-8 md:px-32 lg:px-32 xl:px-32" />
                                     <div className=" ProjectCta-grid" >
                                         <div className="">
-                                            <h1 className="text-2xl font-medium pb-3 " >
+                                            <h1 className="text-2xl font-medium pb-3 project-title" >
                                                 <a href={item.link} target="_blank" rel="noopener noreferrer" className="">{item?.name}</a>
                                                 </h1>
                                             <p className="font-medium" >{item?.desc}</p>
@@ -73,9 +71,12 @@ const Projects = () => {
                             )
                         })
                     }
-
+                <div className="text-center">
+                <a href="https://github.com/Bildad0?tab=repositories" target="_blank" rel="noopener noreferrer" className="flex justify-center bg-transparent text-center border-gray-400 border-border1 px-8 py-3 mt-5 rounded-sm mx-auto font-bold tracking-wider hover:bg-white  hover:text-gray-700 transition duration-200 ease-in-out " >More Projects</a>
                 </div>
-            <a href="https://github.com/Bildad0?tab=repositories" target="_blank" rel="noopener noreferrer" className=" bg-transparent text-center border-gray-400 border-border1 px-8 py-3 mt-5 rounded-sm mx-auto font-bold tracking-wider hover:bg-white  hover:text-gray-700 transition duration-200 ease-in-out " >More Projects</a>
+                </div>
+                
+           
 
             </div>
         </section>

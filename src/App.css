@@ -23,6 +23,8 @@ body {
   text-decoration: underline;
   text-decoration-color: white;
 }
+
+.project-title:hover,
 .my-nav-bar li:hover{
   text-decoration-line: underline;
   text-decoration-color: gray;

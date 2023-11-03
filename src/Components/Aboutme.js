@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"
-import { SiAdobe, SiJavascript, SiNextdotjs } from "react-icons/si";
+import { SiAdobe, SiJavascript, SiMysql, SiNextdotjs } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { DiFirebase, DiMongodb, DiNodejsSmall } from "react-icons/di";
 import { RiReactjsLine } from "react-icons/ri";
@@ -43,7 +43,6 @@ const Aboutme = () => {
               <div className="pt-5">
                 <ul className="skillList" >
                   <li className="flex items-center" > <FaReact /> <span className="ml-2" >React</span></li>
-                  <li className="flex items-center" > <SiNextdotjs /> <span className="ml-2" >Next.js</span></li>
                   <li className="flex items-center" > <RiReactjsLine /> <span className="ml-2" > Flutter (mobile) </span></li>
                   <li className="flex items-center"><SiAdobe/><span className="ml-2">Photoshop</span> </li>
                 </ul>

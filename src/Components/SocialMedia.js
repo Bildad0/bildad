@@ -1,6 +1,6 @@
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsInstagram } from "react-icons/bs";
+import { BsTwitter } from "react-icons/bs";
 import { ImLinkedin2 } from "react-icons/im";
 import { RiGithubLine } from "react-icons/ri";
 
@@ -16,8 +16,8 @@ const SocialMedia = () => {
           </a>
         </li>
         <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/iambildad/">
-            <BsInstagram />
+          <a target="_blank" rel="noopener noreferrer" href="https://x.com/Bildad0">
+            <BsTwitter />
           </a>
         </li>
         <li>
