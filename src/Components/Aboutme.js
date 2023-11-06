@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"
-import { SiAdobe, SiJavascript, SiMysql, SiNextdotjs } from "react-icons/si";
+import { SiAdobe, SiFlutter, SiJavascript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { DiFirebase, DiMongodb, DiNodejsSmall } from "react-icons/di";
-import { RiReactjsLine } from "react-icons/ri";
 
 
 const Aboutme = () => {
@@ -34,7 +33,7 @@ const Aboutme = () => {
             <div className="flex justify-between w-3/4 lg:w-3/5 "  >
               <div className="pt-5">
                 <ul className="skillList" >
-                  <li className="flex items-center" > <SiJavascript /> <span className="ml-2" >JavaScript (ES6+)</span></li>
+                  <li className="flex items-center" > <SiJavascript className=""/> <span className="ml-2" >JavaScript (ES6+)</span></li>
                   <li className="flex items-center" > <DiNodejsSmall /> <span className="ml-2" >Node.js</span></li>
                   <li className="flex items-center" > <DiMongodb /> <span className="ml-2" >MongoDB</span></li>
                   <li className="flex items-center"><DiFirebase/> <span className="ml-2">FireBase</span> </li>
@@ -43,7 +42,7 @@ const Aboutme = () => {
               <div className="pt-5">
                 <ul className="skillList" >
                   <li className="flex items-center" > <FaReact /> <span className="ml-2" >React</span></li>
-                  <li className="flex items-center" > <RiReactjsLine /> <span className="ml-2" > Flutter (mobile) </span></li>
+                  <li className="flex items-center" > <SiFlutter /> <span className="ml-2" > Flutter (mobile) </span></li>
                   <li className="flex items-center"><SiAdobe/><span className="ml-2">Photoshop</span> </li>
                 </ul>
               </div>

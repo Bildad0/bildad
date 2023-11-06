@@ -75,11 +75,11 @@ text-decoration: underline;
   display: block;
   width: 100%;
   height: 70%;
-  border-radius: 5px;
+  -o-border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .ImgWrapper:hover .ImgWrapper::after {
@@ -265,6 +265,10 @@ text-decoration: underline;
   background-color: #fff;
 }
 
+.social-icons{
+  padding: 1px;
+  border-radius: 50%;
+}
 /* social media */
 
 .ProjectCta-grid {
